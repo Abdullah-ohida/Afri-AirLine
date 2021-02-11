@@ -14,7 +14,7 @@ class DatabaseTest {
     @BeforeEach
     void setUp() {
         database = new Database();
-        passenger = new Passenger("Abdullah", "Ismail", "12/2/2001", 23);
+        passenger = new Passenger("Abdullah", "Ismail");
     }
 
     @AfterEach
