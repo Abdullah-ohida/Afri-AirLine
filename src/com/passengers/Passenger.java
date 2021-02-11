@@ -5,7 +5,7 @@ import java.security.SecureRandom;
 public class Passenger {
     private String firstName;
     private String lastName;
-SecureRandom random = new SecureRandom();
+    SecureRandom random = new SecureRandom();
     public Passenger(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -29,6 +29,6 @@ SecureRandom random = new SecureRandom();
 
     public int generateId() {
         final int STARTING_POINT = 1;
-        return  STARTING_POINT +  random.nextInt(50);
+        return STARTING_POINT + random.nextInt(50);
     }
 }
